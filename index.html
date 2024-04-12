@@ -2,9 +2,11 @@
 <html>
 <head></head>
 <body>
-<ol>
 <h1>github pages的理解和使用心得</h1>
+<h3>底下步驟，是建立兩條獨立branch，一條是專案用，一條是github pages用</h3>
+<ol>
 <li>在github建立專案，例如叫project01</li>
+<br>
 <li>在本地mkdir project01 && cd project01</li>
 <li>git init </li>
 <li>git remote add origin git@github.com:charlie388/project01.git</li>
@@ -14,6 +16,7 @@
 <li>git checkout -b main
 <li>git push -u origin main</li>
 <li>檢查專案相關檔案是否上傳到github在main branch</li>
+<br>
 <li>cd .. && rm -rf project01</li>
 <br>
 <li>在本地mkdir project01 && cd project01</li>
@@ -25,6 +28,9 @@
 <li>git checkout -b gh-pages
 <li>git push -u origin gh-pages</li>
 <li>檢查網頁相關檔案是否上傳到github在gh-pages branch</li>
+<br>
+<li>git fetch orign，下載之前main branch</li>
+<li>git checkout -t origin/main</li> 
 </ol>
 <hr>
 <h3>我們可以建立/docs目錄，並在此目錄下建立靜態網頁(如default index.html)，並且指定github pages設定在/docs目錄下，</h3>
