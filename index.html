@@ -32,38 +32,14 @@
 <li>git fetch orign，更新之前main branch</li>
 <li>git checkout -t origin/main</li> 
 </ol>
+<h3><a href="https://github.com/charlie388/project01">https://github.com/charlie388/project01</a></h3>
+<h3><a href="https://charlie388.github.io/project01/">https://charlie388.github.io/project01/</a></h3>
 <hr>
-<h3>我們可以建立/docs目錄，並在此目錄下建立靜態網頁(如default index.html)，並且指定github pages設定在/docs目錄下，</h3>
-<h3>目前只允許/和/docs目錄下建立靜態網頁，我覺得設定在/docs目錄下是比較合適的方法，</h3>
-<h3>如下是試用的結果</h3>
-<h3><a href="https://github.com/charlie388/test-repo-pages-1">https://github.com/charlie388/test-repo-pages-1</a></h3>
-<h3><a href="https://charlie388.github.io/test-repo-pages-1">https://charlie388.github.io/test-repo-pages-1/</a></h3>
-<br><br>
 
-<h3>如果希望/目錄下建立靜態網頁，可在此目錄下建立靜態網頁(如default index.html)，並建立gh-pages branch，</h3>
-<h3>系統會自動設定好gh-pages branch 的 /目錄為github pages的靜態網頁位址，</h3>
-<h3>想不到建立gh-pages branch的優點...，除非/docs目錄對開發者有特殊需求</h3>
-<h3>如下是試用的結果</h3>
-<h3><a href="https://github.com/charlie388/test-repo-pages-2">https://github.com/charlie388/test-repo-pages-2</a></h3>
-<h3><a href="https://charlie388.github.io/test-repo-pages-2">https://charlie388.github.io/test-repo-pages-2</a></h3>
-<br><br>
-
-<h3>參考連結:</h3>
-<h3>
-只示範gh-pages的作法<br>
-<a href="https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276">從零開始: 用github pages 上傳靜態網站</a>
-</h3>
-<h3>
-github pages 官方網頁 (有說明theme套用，用markdown語法，下次試試)<br>
-<a href="https://pages.github.com">https://pages.github.com/</a>
-</h3>
-<br><br>
-
-<hr>
 <h3>github pages的機制，是指定特定的repo的branch，當該branch commit時，來觸發相關檔案轉換或複製，到另一個domain(github page的domain)，</h3>
-<h3>因此若工作branch和github pages指定的branch，為同樣的branch，當工作用branch commit時，同時會觸發github pages工作(可在Actions頁面看到)。</h3>
-<h3>為了減少github pages的轉換或複製工作，因此需要，將工作branch和github pages指定的branch分開。</h3>
-<h3>但單純使用git指令，有些繁瑣，因此有個npm套件gh-pages，可以幫忙這件工作</h3>
+<h3>因此若工作branch和github pages指定branch，為相同，當工作branch commit時，同時會觸發github pages指定branch(可在Actions頁面看到)。</h3>
+<h3>為了減少github pages的轉換或複製工作，因此需要，將工作branch和github pages指定branch獨立分開。</h3>
+<h3>有個npm套件gh-pages，可以輔助這件工作</h3>
 <h3>如下是試用的結果</h3>
 <h3><a href="https://github.com/charlie388/test-repo-pages-3">https://github.com/charlie388/test-repo-pages-3</a></h3>
 <h3><a href="https://charlie388.github.io/test-repo-pages-3">https://charlie388.github.io/test-repo-pages-3</a></h3>
