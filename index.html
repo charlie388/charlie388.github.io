@@ -3,7 +3,8 @@
 <head></head>
 <body>
 <h1>github pages的理解和使用心得</h1>
-<h3>底下步驟，是建立兩條獨立branch，一條是專案用，一條是github pages用
+<h3>
+底下步驟，是建立兩條獨立branch，一條是專案用，一條是github pages用
 <ol>
 <li>在github建立專案，例如叫project01</li>
 <br>
@@ -32,15 +33,15 @@
 <li>git fetch orign，更新之前main branch</li>
 <li>git checkout -t origin/main</li> 
 </ol>
+<a href="https://github.com/charlie388/project01">https://github.com/charlie388/project01</a><br>
+<a href="https://charlie388.github.io/project01">https://charlie388.github.io/project01</a>
 </h3>
-<h3><a href="https://github.com/charlie388/project01">https://github.com/charlie388/project01</a></h3>
-<h3><a href="https://charlie388.github.io/project01">https://charlie388.github.io/project01</a></h3>
 <hr>
 <h3><p>
-github pages會指定branch(default是gh-pages)，當該branch commit時，來觸發某個目錄(/或/docs)下檔案轉換到https://[user].github.io/[repo name]的domain。
+github pages會指定branch(default是gh-pages)，當該branch commit時，會觸發某個目錄(/ 或/docs)下檔案轉換到https://[user].github.io/[repo name]的domain。
 此轉換動作，每個小時限制10次，可在Actions頁面看到轉換的進度。
-因此若工作用branch和github pages指定branch相同，當工作用branch commit時，同時會觸發github pages指定branch轉換。
-為了減少github pages的轉換次數，因此需要將工作用branch和github pages指定branch分開。
+因此若工作用branch和github pages的branch相同，當工作用branch commit時，同時會觸發github pages的branch轉換。
+為了減少github pages的轉換次數，因此需要將這兩個branch分開。
 npm套件gh-pages，可以輔助這件工作
 </p></h3>
   
